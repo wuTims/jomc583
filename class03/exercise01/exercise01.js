@@ -37,3 +37,10 @@ function largestNum(numArray){
 }
 
 largestNum([10,20,100,2,5]);
+
+//Problem 4
+function charFreq(string){
+  
+}
+
+charFreq("my name is tim");
