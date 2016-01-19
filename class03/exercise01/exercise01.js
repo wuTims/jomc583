@@ -24,3 +24,16 @@ function sum(numArray){
 }
 
 sum([10,20,100,2,5]);
+
+//Problem 3
+function largestNum(numArray){
+  var largest = numArray[0];
+  for(var i = 1; i < numArray.length; i++){
+    if(numArray[i] > largest){
+      largest = numArray[i];
+    }
+  }
+  console.log(largest);
+}
+
+largestNum([10,20,100,2,5]);
