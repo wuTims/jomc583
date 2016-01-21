@@ -49,3 +49,23 @@ function charFreq(string){
 }
 
 charFreq("my name is tim");
+
+//Problem 5
+function fibonacci(max){
+  var prevFib = 0;
+  var currFib = 0;
+  
+  while((currFib + prevFib) <= max){
+    if(currFib === 0){
+      currFib += 1;
+      console.log(currFib);
+    }else{
+      var temp = prevFib;
+      prevFib = currFib;
+      currFib = currFib + temp;
+      console.log(currFib);
+    }
+  }
+}
+
+fibonacci(25);
