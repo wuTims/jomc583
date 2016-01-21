@@ -40,7 +40,12 @@ largestNum([10,20,100,2,5]);
 
 //Problem 4
 function charFreq(string){
-  
+  var freqMap = {};
+  for(var i = 0; i < string.length; i++){
+    var key = string.charAt(i);
+    freqMap[key] = (freqMap[key] || 0) + 1;
+  }
+  console.log(freqMap);
 }
 
 charFreq("my name is tim");
